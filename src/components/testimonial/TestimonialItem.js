@@ -44,7 +44,6 @@ const greyRatingStars = (rating) => {
 };
 
 const TestimonialItem = ({ user }) => {
-  console.log("hello it's fun");
   return (
     <div className={styles.card}>
       <div>
