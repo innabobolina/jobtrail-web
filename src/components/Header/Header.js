@@ -12,17 +12,25 @@ export default function Header() {
                 <span className={styles.jobtrail}>JobTrail</span>
             </div>
             <ul className={styles.navItems}>
-                <li className ={styles.navLink}>
-                    <Link className ={styles.navLink} href="/">Home</Link>
+                <li className ={styles.navLi}>
+                    <Link href="/">
+                       <a className={styles.navA}>Home</a> 
+                    </Link>
                 </li>
-                <li className ={styles.navLink}>
-                    <Link href="/">Feature</Link>
+                <li className ={styles.navLi}>
+                    <Link href="/">
+                       <a className={styles.navA}>Feature</a> 
+                    </Link>
                 </li>
-                <li className ={styles.navLink}>
-                    <Link href="/">Pricing</Link>
+                <li className ={styles.navLi}>
+                    <Link href="/">
+                       <a className={styles.navA}>Pricing</a> 
+                    </Link>
                 </li>
-                <li className ={styles.navLink}>
-                    <Link href="/">Testimonials</Link>
+                <li className ={styles.navLi}>
+                    <Link href="/">
+                       <a className={styles.navA}>Testimonials</a> 
+                    </Link>
                 </li>
             </ul>
             <div>
@@ -30,5 +38,6 @@ export default function Header() {
             </div>
             {/* <MenuButton aria-label="Toggle Menu" /> */}
         </div>
+        
     )
 }
