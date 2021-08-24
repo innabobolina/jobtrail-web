@@ -88,7 +88,7 @@ const TestimonialList = () => {
   return (
     <section className={styles.section}>
       <h6 className={styles.sectionTitle}>TESTIMONIAL</h6>
-      <h2 className={styles.sectionName}>Meet Client Satisfaction</h2>
+      <h1 className={styles.sectionName}>Meet Client Satisfaction</h1>
       <div className={styles.grid}>
         {USERSINFO.map((user) => (
           <>
