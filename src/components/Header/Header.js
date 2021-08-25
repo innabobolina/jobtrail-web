@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../../theme/Header.module.css";
 import { MenuButton } from "theme-ui";
@@ -6,11 +6,8 @@ import { GrStar } from "react-icons/gr";
 import Menu from "./Menu";
 
 export default function Header() {
-  //add funciton here
-  const toggleButtonClick = () => {
-    //.Menu{display:block
-    //}
-  };
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div>
       <div className={styles.header}>
@@ -21,7 +18,7 @@ export default function Header() {
         <ul className={styles.navItems}>
           <li className={styles.navLi}>
             <Link href="/">
-              <a className={styles.navA}>Home</a>
+              <a className={styles.navAActive}>Home</a>
             </Link>
           </li>
           <li className={styles.navLi}>
@@ -40,16 +37,18 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <div>
-          <button className={styles.getStartedButton}>Get started</button>
+        <div className={styles.responsiveContainer}>
+          <div>
+            <button className={styles.getStartedButton}>Get started</button>
+          </div>
+          <MenuButton
+            onClick={() => setToggle(!toggle)}
+            className={styles.MenuButton}
+            aria-label="Toggle Menu"
+          />
         </div>
-        <MenuButton
-          onClick={toggleButtonClick}
-          className={styles.MenuButton}
-          aria-label="Toggle Menu"
-        />
       </div>
-      <Menu />
+      {toggle && <Menu />}
     </div>
   );
 }
