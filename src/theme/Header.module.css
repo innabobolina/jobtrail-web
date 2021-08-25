@@ -1,12 +1,16 @@
+/* ===============# Header #=============== */
+
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #242423;
     font-weight: 600;
     background-color: #F2F2F2;
     padding: 20px;
-    align-items: center;
-    justify-content: space-between;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -44,6 +48,7 @@
 }
 
 .navA:hover {
+    color: #2F93DA;
     text-decoration: underline;
     text-decoration-color: #2F93DA;
 }
@@ -70,10 +75,15 @@
     text-decoration-color: #2F93DA;
 }
 
+.MenuButton {
+    display: none !important;
+}
+
 
 /* ===============# HERO #=============== */
 
 .hero {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #242423;
     font-weight: 600;
     background-color: #F2F2F2;
@@ -82,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .heading {
@@ -93,4 +103,77 @@
 .pHero {
     font-size: 1.2rem;
     padding: 20px 0 50px;
+}
+
+
+/* ===============# Menu #=============== */
+
+.Menu {
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    color: #242423;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    /* margin-top: 300px; */
+}
+
+.X {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.GrClose {
+    margin: 5px;
+}
+
+.menuItems {
+    margin-bottom: 20px;
+}
+
+.menuLi {
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 0;
+    border-bottom: 1px solid grey;
+    width: 200px;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #242423;
+}
+
+.menuA:hover {
+    color: #2F93DA;
+}
+
+.SocialMedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.SocialMediaIcons {
+    margin: 5px;
+    color: #242423;
+}
+
+
+/* ===============# Media Queries #=============== */
+
+@media (max-width: 700px) {
+    .navItems {
+        display: none;
+    }
+    .MenuButton {
+        display: block !important;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
