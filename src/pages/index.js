@@ -2,20 +2,17 @@ import React from "react";
 import { ThemeProvider } from "theme-ui";
 import theme from "theme";
 
-import SEO from "components/seo";
-import TestimonialList from "components/testimonial/TestimonialList";
-import Footer from "../components/Footer";
-import QualityFeatures from "components/qulityFeatures/QualityFeatures";
+import Layout from "components/layout";
+import KeyFeature from "../sections/key-feature";
+import TestimonialCard from "../sections/testimonial";
 
 export default function IndexPage() {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <SEO title="Jobtrail App" />
-      </ThemeProvider>
-      <QualityFeatures />
-      <TestimonialList />
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <KeyFeature />
+        <TestimonialCard />
+      </Layout>
+    </ThemeProvider>
   );
 }
