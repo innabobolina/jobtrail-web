@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "jobtrail-web",
+		"path": "..\\..\\..\\jobtrail-web"
+	},
+	{
+		"name": "src",
+		"path": ".."
+	}
+],
+  "settings": {}
+}
