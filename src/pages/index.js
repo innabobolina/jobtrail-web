@@ -3,8 +3,8 @@ import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 
 // import SEO from 'components/seo';
-import Package from 'components/pricingSectionData';
-import Feature from 'components/feature';
+import Package from 'sections/pricingSectionData';
+import Feature from 'sections/feature';
 
 
 import Layout from "components/layout";
