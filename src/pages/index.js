@@ -4,6 +4,7 @@ import theme from 'theme';
 
 import SEO from 'components/seo';
 import Package from 'components/pricingSectionData';
+import Feature from 'components/feature';
 
 
 
@@ -13,7 +14,7 @@ export default function IndexPage() {
           <SEO title="Jobtrail App" />
           <div />
           <div />
-          <div />
+          <Feature />
           <div />
           <div />
           <div />
