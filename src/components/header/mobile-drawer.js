@@ -4,12 +4,8 @@ import { Scrollbars } from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link } from "react-scroll";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
 import menuItems from "./header.data";
 
 const social = [
@@ -23,11 +19,7 @@ const social = [
   },
   {
     path: "/",
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: "/",
-    icon: <FaDribbble />,
+    icon: <GrLinkedin />,
   },
 ];
 
