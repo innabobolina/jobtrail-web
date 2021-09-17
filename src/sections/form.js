@@ -1,29 +1,17 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import {
-  Container,
-  Box,
-  Heading,
-  Text,
-  Image,
-  Button,
-  Input,
-  Label,
-} from "theme-ui";
+import { Container, Button } from "theme-ui";
 
 export default function Form({ openFormHandler }) {
-  //   const [closeForm, setCloseForm] = useState(false);
-
   return (
     <Container sx={styles.form}>
       <IoMdClose
         size="20px"
         style={{ marginTop: "20px" }}
         onClick={openFormHandler}
-        // onClick={() => setCloseForm(!closeForm)}
       />
       <h2 style={{ textAlign: "center", marginTop: 0 }}>Contact Us Today!</h2>
-      <form action="" method="get" class="form-example">
+      <form action="" method="get">
         <div style={{ textAlign: "center" }}>
           <label for="name" style={{ paddingRight: "15px" }}>
             Name{" "}
@@ -49,16 +37,16 @@ export default function Form({ openFormHandler }) {
             required
             placeholder="Please enter your email here"
             size="25"
-            style={{ border: "none", borderBottom: "1px solid black" }}
+            style={{
+              border: "none",
+              borderBottom: "1px solid black",
+              marginTop: "30px",
+            }}
           />
         </div>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <Button style={{ margin: "10px 0 10px" }}>Send</Button>
         </div>
-
-        {/* <div class="form-example">
-          <input type="submit" value="Subscribe!" />
-        </div> */}
       </form>
     </Container>
   );

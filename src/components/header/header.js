@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import { GrStar } from "react-icons/gr";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
-import { Children } from "react";
 
 export default function Header({ className, buttonGetStarted }) {
   return (
@@ -12,7 +11,7 @@ export default function Header({ className, buttonGetStarted }) {
       sx={styles.header}
       className={className}
       id="header"
-      style={{ marginTop: "10px" }}
+      style={{ backgroundColor: "#F2F2F2", padding: "15px" }}
     >
       <Container sx={styles.container}>
         <div sx={styles.logo} style={{ display: "flex", alignItems: "center" }}>

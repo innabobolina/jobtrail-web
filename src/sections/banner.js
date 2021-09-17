@@ -23,5 +23,6 @@ const styles = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: "200px",
   },
 };

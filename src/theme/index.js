@@ -264,8 +264,8 @@ export default {
     },
     primary: {
       variant: "buttons.defaultBtn",
-      color: "white",
-      bg: "primary",
+      color: "#F2F2F2",
+      bg: "#D55D48",
       "&:hover": {
         boxShadow: "rgba(233, 76, 84, 0.57) 0px 9px 20px -5px",
       },
