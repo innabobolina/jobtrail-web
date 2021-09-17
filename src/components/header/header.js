@@ -2,19 +2,21 @@ import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import { GrStar } from "react-icons/gr";
-import Logo from "components/logo";
-import LogoDark from "assets/logo.svg";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 
 export default function Header({ className }) {
   return (
-    <header sx={styles.header} className={className} id="header">
+    <header
+      sx={styles.header}
+      className={className}
+      id="header"
+      style={{ marginTop: "10px" }}
+    >
       <Container sx={styles.container}>
-        {/* <GrStar size={50} sx={styles.star} /> */}
         <div sx={styles.logo} style={{ display: "flex", alignItems: "center" }}>
           <GrStar size={50} style={{ color: "#2F93DA" }} />
-          <span>JobTrail</span>
+          <span style={{ fontSize: "1.5rem" }}>JobTrail</span>
         </div>
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
@@ -52,15 +54,7 @@ const positionAnim = keyframes`
 `;
 
 const styles = {
-  // logo: {
-  //   display: "flex",
-  //   alignItems: "center",
-  // },
-  // star: {
-  //   color: "#2F93DA",
-  // },
   header: {
-    // marginTop: "10px",
     color: "text",
     fontWeight: "body",
     py: 4,
@@ -106,10 +100,10 @@ const styles = {
       lineHeight: "1.2",
       transition: "all 0.15s",
       "&:hover": {
-        color: "primary",
+        color: "star",
       },
       "&.active": {
-        color: "primary",
+        color: "star",
       },
     },
   },

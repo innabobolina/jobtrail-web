@@ -1,8 +1,7 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, Button } from "theme-ui";
 import React, { useState } from "react";
 import Sticky from "react-stickynode";
-
 import Footer from "./footer/footer";
 import Header from "./header/header";
 

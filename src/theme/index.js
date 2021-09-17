@@ -2,11 +2,11 @@ export default {
   // example colors with dark mode
   colors: {
     star: "#2F93DA", // not working
-    text: "#343D48", // body color and primary color
+    text: "#242423", // body color and primary color
     text_secondary: "#02073E", // secondary body color
     heading: "#0F2137", // primary heading color
     heading_secondary: "#0F2137", // heading color
-    background: "#FFFFFF", // body background color
+    background: "#F2F2F2", // body background color
     background_secondary: "#F9FBFD", // secondary background color
     border_color: "#E5ECF4", // border color
     yellow: "#FFA740", // border color
@@ -38,6 +38,9 @@ export default {
   fonts: {
     body: "'DM Sans', sans-serif",
     heading: "'DM Sans', sans-serif",
+    body: "Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    heading:
+      "Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {

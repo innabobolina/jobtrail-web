@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeProvider } from "theme-ui";
 import theme from "theme";
 // import SEO from 'components/seo';
+import Form from "../sections/form";
 import Banner from "../sections/banner";
 import Package from "sections/pricingSectionData";
 import Feature from "sections/feature";
@@ -13,6 +14,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
+        {/* <Form /> */}
         <Banner />
         <Feature />
         <Package />
