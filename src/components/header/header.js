@@ -4,8 +4,9 @@ import { Link } from "react-scroll";
 import { GrStar } from "react-icons/gr";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import { Children } from "react";
 
-export default function Header({ className }) {
+export default function Header({ className, buttonGetStarted }) {
   return (
     <header
       sx={styles.header}
@@ -33,7 +34,8 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button className="donate__btn">Get Started</Button>
+        {/* <Button className="donate__btn">Get Started</Button> */}
+        {buttonGetStarted}
         <MobileDrawer />
       </Container>
     </header>
@@ -72,7 +74,7 @@ const styles = {
     },
     "&.sticky": {
       position: "fixed",
-      backgroundColor: "background",
+      backgroundColor: "white",
       color: "#000000",
       boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
       py: 3,

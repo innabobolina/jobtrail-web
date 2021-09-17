@@ -14,7 +14,6 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        {/* <Form /> */}
         <Banner />
         <Feature />
         <Package />
